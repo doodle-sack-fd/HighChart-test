@@ -11,6 +11,7 @@ const App = () => {
 
 	return (
 		<div>
+			<h2>SHIFT и мышку передвигаемся по графику</h2>
 			<h1>Highcharts с GPU Ускорением</h1>
 			<SineChart />
 			<MyChart options={chartOptions('line', sineData)} />
