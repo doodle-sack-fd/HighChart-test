@@ -1,6 +1,7 @@
 import React from 'react'
 import MyChart from './MyChart'
 import { generateSineData, chartOptions, generateData } from './data'
+import SineChart from './Sin'
 
 const App = () => {
 	const lineData = generateData(10000)
@@ -11,6 +12,7 @@ const App = () => {
 	return (
 		<div>
 			<h1>Highcharts с GPU Ускорением</h1>
+			<SineChart />
 			<MyChart options={chartOptions('line', sineData)} />
 			<MyChart options={chartOptions('scatter', sineData)} />
 			<MyChart options={chartOptions('area', sineData)} />

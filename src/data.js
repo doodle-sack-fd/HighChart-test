@@ -26,6 +26,6 @@ export const chartOptions = (type, data) => {
 			panKey: 'shift', // Панорамирование активируется при удержании клавиши Shift
 		},
 		series: [{ data }],
-		boost: { useGPUTranslations: true },
+		// boost: { useGPUTranslations: true },
 	}
 }
